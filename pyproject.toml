@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "microservice-training"
+version = "0.1.0"
+description = "Пет-проект для проверки гипотез по разработке микросервисоной архитектуры"
+authors = ["Усманов Тимур <usmanofftimur@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "microservice_training"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.97.0"
+uvicorn = "^0.22.0"
+gunicorn = "^20.1.0"
+isort = "^5.12.0"
+radon = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+in-project = true
+path = "venv"
